@@ -20,4 +20,9 @@
         <Using Include="Xunit"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Domain\AT.Application\AT.Application.csproj" />
+      <ProjectReference Include="..\AT.TestTools\AT.TestTools.csproj" />
+    </ItemGroup>
+
 </Project>
