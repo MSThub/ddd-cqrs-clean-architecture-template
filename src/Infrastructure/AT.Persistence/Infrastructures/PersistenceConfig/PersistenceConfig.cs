@@ -1,4 +1,4 @@
-namespace AT.Persistence.Infrastructures;
+namespace AT.Persistence.Infrastructures.PersistenceConfig;
 
 public class PersistenceConfig : IPersistenceConfig
 {

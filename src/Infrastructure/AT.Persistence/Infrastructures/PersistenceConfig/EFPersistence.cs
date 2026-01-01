@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace AT.Persistence.Infrastructures;
+namespace AT.Persistence.Infrastructures.PersistenceConfig;
 
 public static class EFPersistence
 {

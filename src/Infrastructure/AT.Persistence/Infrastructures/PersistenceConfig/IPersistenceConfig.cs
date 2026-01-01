@@ -1,4 +1,4 @@
-namespace AT.Persistence.Infrastructures;
+namespace AT.Persistence.Infrastructures.PersistenceConfig;
 
 public interface IPersistenceConfig
 {

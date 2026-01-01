@@ -4,7 +4,7 @@ using AT.Application.Abstractions.Handlers;
 using AT.Application.Abstractions.Persistence;
 using AT.Persistence;
 using AT.Persistence.Configurations;
-using AT.Persistence.Infrastructures;
+using AT.Persistence.Infrastructures.PersistenceConfig;
 using Autofac;
 using Microsoft.Data.SqlClient;
 
