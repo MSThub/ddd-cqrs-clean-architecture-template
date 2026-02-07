@@ -9,7 +9,7 @@ namespace AT.RestAPI.Controllers.Records;
 [Route("api/v1/records")]
 public class RecordsController(
     ICommandHandler<CreateRecordCommand, string> createRecordCommandHandler,
-    ICommandHandler<GetRecordByIdQuery, RecordDto> getRecordByIdQueryHandler) : ControllerBase
+    IQueryHandler<GetRecordByIdQuery, RecordDto> getRecordByIdQueryHandler) : ControllerBase
 // i wanted to keep it simple so I didn't use IMediatR or sth else
 {
     [HttpPost]
