@@ -6,7 +6,9 @@ using Autofac;
 using Microsoft.Data.SqlClient;
 using Template.Application;
 using Template.Application.Abstractions.Handlers;
+using Template.Contracts.DateTime;
 using Template.Contracts.Persistence;
+using Template.Infrastructure.DateTime;
 
 namespace Template.RestAPI.Configurations.Services;
 
@@ -69,6 +71,10 @@ public class AutofacBusinessModule : Module
                 _persistenceConfig.ConnectionString)
             .As<IDbConnection>()
             .InstancePerLifetimeScope();
+        
+        builder.RegisterType<DateTimeProvider>()
+            .As<IDateTimeProvider>()
+            .SingleInstance();
 
         base.Load(builder);
     }
