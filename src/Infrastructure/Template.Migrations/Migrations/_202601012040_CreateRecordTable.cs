@@ -2,7 +2,7 @@
 
 namespace Template.Migrations.Migrations;
 
-[Migration(02601012040)]
+[Migration(202601012040)]
 public class _202601012040_CreateRecordTable : Migration
 {
     public override void Up()
